@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Contact Us</title>
+        <style>
+             html {
+                background: linear-gradient(rgba(204, 194, 194, 0.5), rgba(204, 194, 194, 0.5)), url(cakes/cake3.jpg);
+                
+                width: 100%;
+                background-size: cover;
+                background-repeat: no-repeat;
+                position: absolute;
+                background-attachment: fixed;
+            }
+            nav {
+                background-color: whitesmoke;
+                margin-top: -.5em;
+            }
+            nav ul {
+                display: inline-flex;
+                list-style-type: none;
+                
+            }
+            ul li {
+                margin-left: 6em;
+                font-size: 25px;
+                font-weight: 800;
+            }
+            a {
+                text-decoration: none;
+            }
+            a:hover {
+                color: rgb(59, 8, 8);
+            }
+            a:visited {
+                color: rgb(192, 105, 23);
+            }
+            .form1 {
+                margin-top: 2em;
+                height: 2.5em;
+                border-radius: 5px;
+                border: none;
+                width: 20em;
+                background-color: rgb(243, 113, 20);
+                font-size: large;
+                color: black;
+                padding-left: 10px;
+                
+            }
+            #text {
+                margin-top: 2em; 
+                border-radius: 5px;
+                border: none;
+                background-color: lightgray;
+                font-size: large;
+            }
+            button {
+                margin-top: 1em;
+                width: 9em;
+                border-radius: 5px;
+                border: none;
+                height: 2em;
+                background-color: rgb(243, 113, 20);
+            }
+            #reset {
+                margin-left: 1.5em;
+            }
+            h1 {
+                color: white;
+                font-size: 3em;
+                padding-top: 1.2em;
+                margin-left: -3em;
+            }
+            #contact {
+                background-image: url(cakes/cake5.jpg);
+                margin-top: -1.99em;
+                height: 7em;  
+                background-repeat: no-repeat;
+                text-align: center;
+                vertical-align: middle;
+                margin-left: 3.5em;
+                width: 100%;   
+            }
+            form {
+                background-color: rgba(250, 250, 210, 0.473);
+                padding-bottom: 2em;
+                width: fit-content;
+                padding-left: 1em;
+                padding-right: 1em;
+                border-radius: 10px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 2em;
+            }
+            body {
+                margin-bottom: 2em;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="cakes_index.html" target="_blank">Home</a></li>
+                <li><a href="aboutus.html" target="_blank">About</a></li>
+                <li><a href="products.html" target="_blank">Products</a></li>
+                <li>Contact Us</li>
+            </ul>
+        </nav>
+        <div>
+            <div id="contact"><h1>Contact Us</h1></div>
+        </div>
+        <div>
+            <form action="post">
+                <input type="text" placeholder="First Name" class="form1"><br>
+                <input type="text" placeholder="Last Name" class="form1"><br>
+                <input type="email" placeholder="Email Address" class="form1"><br>
+                <input type="tel" placeholder="Phone Number" class="form1"><br>
+                <textarea cols="35" rows="8" placeholder="Write your message here" id="text"></textarea><br>
+                <button type="submit">Submit</button> <button type="reset" id="reset">Clear</button>
+            </form>
+        </div>
+    </body>
+</html>
